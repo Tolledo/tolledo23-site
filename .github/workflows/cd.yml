@@ -37,13 +37,6 @@ jobs:
           --acl public-read \
           . s3://${{ env.BUCKET_NAME }}
 
-    - name: Deploy extras files
-      run: |
-        cd extra
-        aws s3 sync \
-          --acl public-read \
-          . s3://${{ env.BUCKET_NAME }}
-
     - name: Purge cache
       uses: jakejarvis/cloudflare-purge-action@v0.3.0
       env:
