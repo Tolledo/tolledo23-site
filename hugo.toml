@@ -6,7 +6,7 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "tolledo23.dev"
 
 [markup.highlight]
 style = "github-dark"
